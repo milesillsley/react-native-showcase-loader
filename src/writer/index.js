@@ -22,7 +22,7 @@ const templateContents = `
 
 function getStories() {
   return [
-    {{~it.files :value:index}}require('{{=value}}');
+    {{~it.files :value:index}}require('{{=value}}'),
     {{~}}
   ]
 }
