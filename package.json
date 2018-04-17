@@ -1,8 +1,8 @@
 {
-  "name": "react-native-storybook-loader",
+  "name": "react-native-showcase-loader",
   "version": "0.0.0-development",
-  "repository": "https://github.com/elderfo/react-native-storybook-loader.git",
-  "bugs": "https://github.com/elderfo/react-native-storybook-loader/issues",
+  "repository": "git@github.com:milesillsley/react-native-showcase-loader.git",
+  "bugs": "git@github.com:milesillsley/react-native-showcase-loader.git/issues",
   "author": "Chris Gestred <cgetsfred@gmail.com>",
   "license": "MIT",
   "bin": {
