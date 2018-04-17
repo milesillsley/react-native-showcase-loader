@@ -1,12 +1,12 @@
 {
   "name": "react-native-showcase-loader",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "repository": "git@github.com:milesillsley/react-native-showcase-loader.git",
   "bugs": "git@github.com:milesillsley/react-native-showcase-loader.git/issues",
   "author": "Chris Gestred <cgetsfred@gmail.com>",
   "license": "MIT",
   "bin": {
-    "rnstl": "./src/rnstl-cli.js"
+    "rnscl": "./src/rnstl-cli.js"
   },
   "devDependencies": {
     "codecov": "^2.3.0",
