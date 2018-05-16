@@ -12,6 +12,10 @@ const args = require('yargs')
       desc:
         'The directory or directories, relative to the project root, to search for files in.',
     },
+    config: {
+      desc: 'Is there a config file to read from',
+      type: 'string',
+    },
     pattern: {
       desc:
         "Pattern to search the search directories with. Note: if pattern contains '**/*' it must be escaped with quotes",

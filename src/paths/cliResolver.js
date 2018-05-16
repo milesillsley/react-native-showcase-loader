@@ -1,3 +1,4 @@
+const fs = require('fs');
 const logger = require('../logger');
 
 const cliResolver = yargv => {
@@ -8,9 +9,16 @@ const cliResolver = yargv => {
 
   const config = {};
 
-  if (yargv.searchDir && Array.isArray(yargv.searchDir)) {
+  if (yargv.config) {
+    const configContents = JSON.parse(fs.readFileSync(yargv.config));
+    config.searchDir = Array.isArray(configContents) ? configContents : [];
+  } else if (
+    yargv.searchDir &&
+    Array.isArray(yargv.searchDir) &&
+    !yargv.config
+  ) {
     config.searchDir = yargv.searchDir;
-  } else if (yargv.searchDir) {
+  } else if (yargv.searchDir && !Array.isArray(yargv.searchDir)) {
     config.searchDir = [yargv.searchDir];
   }
 
