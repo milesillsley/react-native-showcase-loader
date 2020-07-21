@@ -9,7 +9,7 @@
     "rnscl": "./src/rnstl-cli.js"
   },
   "devDependencies": {
-    "codecov": "^2.3.0",
+    "codecov": "^3.7.1",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.16.1",
     "eslint-config-elderfo": "^1.2.3",
